@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --espacamento: 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* border: 2px solid red; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background: linear-gradient(120deg, #a8ff78, #78ffd6 );
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 6px 6px 10px 0 #004a0053
+    } 
+    25% {
+        box-shadow: -6px 6px 10px 0 #004a0053
+    }
+    50% {
+        box-shadow: -6px -6px 10px 0 #004a0053
+    }
+    75% {
+        box-shadow: 6px -6px 10px 0 #004a0053
+    }
+    100% {
+        box-shadow: 6px 6px 10px 0 #004a0053
+    }
+}
+
+.container{
+    /* border: 2px solid rgb(0, 255, 51); */
+    width: 100%;
+    max-width: 400px;
+    max-height: 375px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px 0 #004a0053;
+    animation: neon 4s ease-in-out infinite;
+}
+
+.titulo{
+    background:rgb(99, 158, 104) ;
+    padding: 20px;
+    display: flex;
+    /* border: 2px solid orange; */
+    width: 100%;
+    max-width: calc(101% - 43px);
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 100%;
+    max-width: calc(100% - 29px);
+    padding: var(--espacamento);
+    padding-top: 30px;
+    background: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.formulario input {
+    display: block;
+    width: calc(171% - (var(--espacamento)));
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 3px solid gray;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+}
+
+
+
+.formulario .btEntrar {
+    margin-top: 40px;
+    width: calc(112.3% - (var(--espacamento)));
+}
+
+@keyframes img-astronauta{
+    0%{
+        transform: rotate(6deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+
+.img-astronauta {
+    /* border: 2px solid yellow; */
+    margin-left: -140%;
+    margin-top: -120%;
+    max-width: 100%;
+    animation: img-astronauta 3s ease-in-out infinite alternate;
+}
