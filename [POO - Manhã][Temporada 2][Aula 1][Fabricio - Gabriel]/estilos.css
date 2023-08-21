@@ -1,15 +1,43 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-};
+    background: linear-gradient(120deg, #1f4037, #99f2c8);
+    background-repeat: no-repeat;
+}
 
 .container{
+    border: 2px solid blue;
     display: flex;
-    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.container img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 245px;
+    height: 250px;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .container .nome {
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 10px;
+    max-width: 225px;
+    margin: 50px;
+}
+
+.cards .matricula{
+    justify-content: left;
 }
