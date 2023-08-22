@@ -20,10 +20,17 @@ for(let i = 0; i < listaDeAlunos.length; i++){
 
             <div class='corpo'>
                 <img src="${listaDeAlunos[i].foto}" alt="">
-                    <div class='atributos'>
-                        <p><span>Matrícula: ${listaDeAlunos[i].matricula}</span></p>
-                        <p><span>Email: ${listaDeAlunos[i].email}</span></p>
+                    <div class='info'>
+                        <div>
+                            <p class='label'>Matricula:</p>
+                            <p class='valor'>${listaDeAlunos[i].matricula}</p>
+                        </div>
+                        <div>
+                            <p class='label'>Email:</p>
+                            <p class='valor'>${listaDeAlunos[i].email}</p>
+                        </div>
                     </div>
+
             </div>
         </div>
     `;

@@ -14,10 +14,11 @@ body{
 
 .cabecalho {
     display: flex;
+    position: relative;
     background-color: rgb(56, 56, 56);
     padding: 20px;
     justify-content: space-between;
-    
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.562);
 }
 
 
@@ -68,9 +69,23 @@ body{
     height: 310px;
 }
 
-.atributos {
-    justify-content: space-around;
+.info {
+    margin-top: 80px;
+    margin-left: 50px;
 }
+
+.info .label {
+    color: rgba(0, 174, 255, 0.925);
+    margin-bottom: -5px;
+}
+
+.info .valor {
+    color: rgb(0, 109, 160);
+    font-weight: 400;
+    border-bottom: 1.5px solid rgba(0, 174, 255, 0.616);
+    width: 350px;
+}
+
 
 
 
