@@ -1,8 +1,10 @@
 class Aluno {
-    constructor(foto, matricula, nome, idade){
+    constructor(turma, email, foto, matricula, nome, idade){
+        this.turma = turma;
+        this.nome = nome;
         this.foto = foto;
         this.matricula = matricula;
-        this.nome = nome;
+        this.email = email;
         this.idade = idade;
     }
 }

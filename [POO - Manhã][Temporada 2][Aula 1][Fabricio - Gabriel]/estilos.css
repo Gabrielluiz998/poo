@@ -1,43 +1,76 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #1f4037, #99f2c8);
-    background-repeat: no-repeat;
+    background: black;
+    color: white;
 }
 
-.container{
-    border: 2px solid blue;
+.container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    margin: 10%;
+
 }
 
-.container img{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 245px;
-    height: 250px;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-.container .nome {
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.cards {
+.cabecalho {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid red;
-    padding: 10px;
-    max-width: 225px;
-    margin: 50px;
+    background-color: rgb(56, 56, 56);
+    padding: 20px;
+    justify-content: space-between;
+    
 }
 
-.cards .matricula{
-    justify-content: left;
+
+.card .ifal {
+    height: 130px;
+    width: 120px;
+    border: none;
 }
+
+.card img {
+    height: 250px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: 1px solid black;
+};
+
+.card .cabecalho {
+    background-color: blue;
+    width: 200px;
+    position: absolute;
+    height: 200px;
+}
+
+.card .turma {
+    color: aquamarine;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+.cabecalho .nome {
+    color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    font-size: 30px;
+}
+
+.card {
+    min-width: 700px;
+    height: 500px;
+    /* border: 2px solid red; */
+    margin: 40px;
+}
+
+.corpo {
+    display: flex;
+    color: black;
+    background: white;
+    height: 310px;
+}
+
+.atributos {
+    justify-content: space-around;
+}
+
+
+
