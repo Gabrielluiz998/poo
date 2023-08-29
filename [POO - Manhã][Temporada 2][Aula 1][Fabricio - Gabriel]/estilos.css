@@ -7,7 +7,7 @@ body{
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 10%;
 
 }
@@ -48,12 +48,14 @@ body{
     color: aquamarine;
     margin-bottom: -10px;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cabecalho .nome {
     color: rgb(255, 255, 255);
     flex-basis: 100%;
     font-size: 30px;
+    font-family: 'Bitter', serif;
 }
 
 .card {
@@ -61,32 +63,37 @@ body{
     height: 500px;
     /* border: 2px solid red; */
     margin: 40px;
+    margin-bottom: 90px;
 }
 
 .corpo {
     display: flex;
     color: black;
     background: white;
+    padding: 50px;
     height: 310px;
-    border-bottom-left-radius: 8px;
+    /*border-bottom-left-radius: 8px;*/
     border-bottom-right-radius: 8px;
 }
 
 .info {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 50px;
+    width: 100%;
 }
 
 .info .label {
+    font-size: 20px;
     color: rgba(0, 174, 255, 0.925);
     margin-bottom: -5px;
 }
 
 .info .valor {
+    font-size: 20px;
     color: rgb(0, 109, 160);
     font-weight: 400;
     border-bottom: 1.5px solid rgba(0, 174, 255, 0.616);
-    width: 350px;
+    width: 100%;
 }
 
 
