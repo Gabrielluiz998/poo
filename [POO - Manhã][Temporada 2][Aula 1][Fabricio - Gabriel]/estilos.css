@@ -34,6 +34,7 @@ body{
     width: 180px;
     margin-top: 20px;
     margin-left: 40px;
+    object-fit: cover;
     border: 1px solid black;
 };
 
@@ -64,6 +65,10 @@ body{
     /* border: 2px solid red; */
     margin: 40px;
     margin-bottom: 90px;
+};
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .corpo {
