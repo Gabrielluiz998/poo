@@ -15,6 +15,12 @@ class Aluno {
     }
 
     getIdade (){
-        return(dataAtual - this.dataDeNascimento.year)
+        if(hoje.getDate() === this.dataDeNascimento.getDate() && hoje.getMonth() === this.dataDeNascimento.getMonth()) {
+            let hoje = new Date()
+            return (hoje.getFullYear() - this.dataDeNascimento.getFullYear())
+        }   
+        else {
+            return ((hoje.getFullYear() - this.dataDeNascimento.getFullYear()) - 1)
+        }
     }
 }
