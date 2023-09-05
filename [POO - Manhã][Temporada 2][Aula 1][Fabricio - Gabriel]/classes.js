@@ -1,10 +1,20 @@
 class Aluno {
-    constructor(turma, email, foto, matricula, nome, idade){
+    constructor(turma, email, primeiroNome, ultimoNome, foto, matricula, dataDeNascimento){
         this.turma = turma;
-        this.nome = nome;
+        this.primeiroNome = primeiroNome;
+        this.ultimoNome = ultimoNome;
         this.foto = foto;
         this.matricula = matricula;
         this.email = email;
-        this.idade = idade;
+        this.dataDeNascimento = dataDeNascimento;
+    }
+
+    
+    getNome(){
+        return (`${this.ultimoNome}, ${this.primeiroNome}`);
+    }
+
+    getIdade (){
+        return(dataAtual - this.dataDeNascimento.year)
     }
 }

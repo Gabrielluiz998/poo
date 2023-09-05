@@ -60,15 +60,17 @@ body{
 }
 
 .card {
-    min-width: 700px;
-    height: 500px;
-    /* border: 2px solid red; */
-    margin: 40px;
-    margin-bottom: 90px;
-};
+    margin-bottom: 3%;
+    transition: 400ms ease-in-out;
+    z-index: 1;
+}
 
 .card:hover{
+    margin-bottom: 5%;
+    margin-top: 5%;
     transform: scale(1.05);
+    transition: 400ms ease-in-out;
+    box-shadow: 0 0 30px 8px rgb(73, 73, 73);
 }
 
 .corpo {
@@ -78,7 +80,13 @@ body{
     padding: 50px;
     height: 310px;
     /*border-bottom-left-radius: 8px;*/
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 10px;
+    transition: 500ms ease-out;
+}
+
+.corpo:hover {
+    border-left: 8px solid greenyellow;
+    transition: 500ms ease-in;
 }
 
 .info {
