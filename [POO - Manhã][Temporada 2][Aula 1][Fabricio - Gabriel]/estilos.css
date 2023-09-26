@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+
+}
+
+.cabecalho {
+    display: flex;
+    position: relative;
+    background-color: rgb(56, 56, 56);
+    padding: 20px;
+    margin-left: -5px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.562);
+}
+
+
+.card .ifal {
+    height: 130px;
+    width: 120px;
+    border: none;
+}
+
+.card img {
+    height: 250px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 40px;
+    object-fit: cover;
+    border: 1px solid black;
+};
+
+.card .cabecalho {
+    background-color: blue;
+    width: 200px;
+    position: absolute;
+    height: 200px;
+}
+
+.card .turma {
+    color: aquamarine;
+    margin-bottom: -10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho .nome {
+    color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    font-size: 30px;
+    font-family: 'Bitter', serif;
+}
+
+.card {
+    margin-bottom: 3%;
+    transition: 400ms ease-in-out;
+    z-index: 1;
+}
+
+.card:hover{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    transform: scale(1.05);
+    transition: 400ms ease-in-out;
+    box-shadow: 0 0 30px 8px rgb(73, 73, 73);
+}
+
+.corpo {
+    display: flex;
+    color: black;
+    background: white;
+    padding: 50px;
+    height: 310px;
+    /*border-bottom-left-radius: 8px;*/
+    border-bottom-right-radius: 10px;
+    transition: 500ms ease-out;
+}
+
+.corpo:hover {
+    border-left: 8px solid greenyellow;
+    transition: 500ms ease-in;
+}
+
+.info {
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.info .label {
+    font-size: 20px;
+    color: rgba(0, 174, 255, 0.925);
+    margin-bottom: -5px;
+}
+
+.info .valor {
+    font-size: 20px;
+    color: rgb(0, 109, 160);
+    font-weight: 400;
+    border-bottom: 1.5px solid rgba(0, 174, 255, 0.616);
+    width: 100%;
+}
+
+
+
+
