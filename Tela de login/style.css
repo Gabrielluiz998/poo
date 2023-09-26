@@ -43,7 +43,7 @@ body{
     /* border: 2px solid rgb(0, 255, 51); */
     width: 100%;
     max-width: 400px;
-    max-height: 375px;
+    max-height: 386px;
     border-radius: 25px;
     box-shadow: 0 0 10px 6px #0b171c88;
     position: relative;
@@ -52,7 +52,7 @@ body{
 }
 
 .titulo{
-    background:#0b8793 ;
+    background: linear-gradient(120deg, #07585f, #0b8793);
     padding: 20px;
     display: flex;
     /* border: 2px solid orange; */
@@ -81,22 +81,34 @@ body{
 }
 
 .formulario input {
+    border-width: initial;
+    border-style: initial;
+    border-color: initial;
     display: block;
     width: calc(171% - (var(--espacamento)));
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 3px solid gray;
     font-family: 'Poppins', sans-serif;
     padding: 8px;
     position: relative;
     z-index: 1;
+    transition: .3s;
 }
 
 
 
-.formulario .btEntrar {
+.formulario #btEntrar {
     margin-top: 40px;
-    width: calc(112.3% - (var(--espacamento)));
+    width: calc(180% - (var(--espacamento)));
+    border: 3px solid gray;
+};
+
+.formulario #btEntrar:hover {
+    margin-top: 40px;
+    width: calc(180% - (var(--espacamento)));
+    border: 3px solid gray;
+    background: linear-gradient(120deg, #07585f, #0b8793);
 }
 
 @keyframes img-astronauta{
@@ -118,10 +130,10 @@ body{
 
 @keyframes img-saturno {
     0%{
-        transform: translate(0, 5px);
+        transform: translate(0, 6px);
     }
     100% {
-        transform: translate(0, -5px);
+        transform: translate(0, -6px);
     }
 }
 
@@ -135,4 +147,27 @@ body{
     z-index: 0;
     transform: rotate(47deg);
     animation: img-saturno 4s ease-in-out infinite alternate;
+}
+
+.form-container a{
+    visibility: hidden;
+}
+
+.form-container.erro input {
+    border: 3px solid rgb(210, 0, 0);
+}
+
+.form-container.erro a {
+    border: none;
+    margin-bottom: 20px;
+    color: rgb(210, 0, 0);
+}
+
+.form-container input:focus {
+    border-width: initial;
+    border-style: initial;
+    border-color: initial;
+    border: 3px solid #7a0574;
+    box-shadow: 0 0 6px 0 #5d0358c7;
+    transition: .3s;
 }
